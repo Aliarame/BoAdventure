@@ -20,7 +20,7 @@ The untouched files as they were when I finished the project. Might not work, bu
 Almost as the same as Untouched except that it should work on Python3 with Pygame  
 The only thing that changed : `event.pos --> pygame.mouse.get_pos()`
 
-### Legacy Enhanced
+### Enhanced
 Enhanced is an optimised version of the project without modifying the technical aspect of the game.
 It's the middle ground between "Legacy" and "Current".
 The major changes are :
@@ -31,7 +31,7 @@ The major changes are :
 ### Current
 This version is the contuinity of the game as if it was always developped with new implementations and optimisations, either for the code or for the technical aspect of the game.
 
-## installation
+## Installation
 Steps for Linux but can work anywhere if you can get python3 and pygame working  
 You need to get pip3 python3 and git (here for Debian and Ubuntu based distributions)  
 ```
@@ -45,9 +45,8 @@ Now you can clone the game's folder and change to the directory of the version o
 ```
 git clone https://github.com/AramLF/BoAdventure
 cd BoAdventure/enhanced/
-python3 game.py
+python3 enhanced.py
 ```
 
 ## Contributing
 Any contributions is welcome if it follows the version goals of the one you're working on.
-
