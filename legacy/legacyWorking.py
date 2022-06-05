@@ -53,14 +53,14 @@ while continuer : #Boucle principale du jeu
                 combat = 0
             if event.type == MOUSEBUTTONUP :
                 if event.button == 1 :
-                    if event.pos[0] > 110 and event.pos[0] < 341 and event.pos[1] > 288 and event.pos[1] < 333 : # Lance le jeu
+                    if pygame.mouse.get_pos()[0] > 110 and pygame.mouse.get_pos()[0] < 341 and pygame.mouse.get_pos()[1] > 288 and pygame.mouse.get_pos()[1] < 333 : # Lance le jeu
                         pygame.quit()
                         continuer_menu = 0
                         continuer_jeu = 0
                         continuer = 0
                         combat = 0
                         choix = 0
-                    if event.pos[0] > 109 and event.pos[0] < 341 and event.pos[1] > 201 and event.pos[1] < 247 : # Quitte le jeu
+                    if pygame.mouse.get_pos()[0] > 109 and pygame.mouse.get_pos()[0] < 341 and pygame.mouse.get_pos()[1] > 201 and pygame.mouse.get_pos()[1] < 247 : # Quitte le jeu
                         continuer_menu = 0
                         
     while continuer_jeu : # Boucle activée une fois le jeu lancé 
@@ -118,7 +118,7 @@ while continuer : #Boucle principale du jeu
                     
                 elif event.type == MOUSEBUTTONUP :
                     if event.button == 1 :
-                        if event.pos[0] > 6 and event.pos[0] < 138 and event.pos[1] > 306 and event.pos[1] < 339 : # Si on attaque il ce passe toutes ces actions
+                        if pygame.mouse.get_pos()[0] > 6 and pygame.mouse.get_pos()[0] < 138 and pygame.mouse.get_pos()[1] > 306 and pygame.mouse.get_pos()[1] < 339 : # Si on attaque il ce passe toutes ces actions
                             
                             chance = randrange(1, 8) #nombre aléatoire entre 1 et 7 pour créer une sorte de semi intelligence artificielle
                             if chance <= 3 :
@@ -144,7 +144,7 @@ while continuer : #Boucle principale du jeu
                                 print ("Ab utilise une parade et bloque les dégats de Bo et l'attaque en retour !")
                             print('\x1b[6;31;40m' + 'Points de vie de Bo :', protagoniste,'                Points de vie de Ab :', antagoniste,''  + '\x1b[0m')
                             
-                        if event.pos[0] > 6 and event.pos[0] < 138 and event.pos[1] > 341 and event.pos[1] < 374 : #Si on clique sur la magie une boucle se crée et permet de choisir entre 2 actions ou de revenir pour choisir une autre action
+                        if pygame.mouse.get_pos()[0] > 6 and pygame.mouse.get_pos()[0] < 138 and pygame.mouse.get_pos()[1] > 341 and pygame.mouse.get_pos()[1] < 374 : #Si on clique sur la magie une boucle se crée et permet de choisir entre 2 actions ou de revenir pour choisir une autre action
                             combatmagie = 1
                             while combatmagie : # Affiche une image par dessus pour choisir entre les 2 actions
                                 menumagie = pygame.image.load("bomagie.jpg").convert()
@@ -162,7 +162,7 @@ while continuer : #Boucle principale du jeu
                                         
                                     elif event.type == MOUSEBUTTONUP : 
                                         if event.button == 1 :
-                                            if event.pos[0] > 6 and event.pos[0] < 138 and event.pos[1] > 306 and event.pos[1] < 339 : # Si on utilise un sortilège il ce passe plusieurs actions 
+                                            if pygame.mouse.get_pos()[0] > 6 and pygame.mouse.get_pos()[0] < 138 and pygame.mouse.get_pos()[1] > 306 and pygame.mouse.get_pos()[1] < 339 : # Si on utilise un sortilège il ce passe plusieurs actions 
                                                 
                                                 chance = randrange(1, 8) #choisit un chiffre entre 1 et 7 
                                                 if chance <= 3 : #si le chiffre est inférieur ou égal à 3 alors l'ennemi attaque normalement
@@ -189,7 +189,7 @@ while continuer : #Boucle principale du jeu
                                                 print('\x1b[6;31;40m' + 'Points de vie de Bo :', protagoniste,'                Points de vie de Ab :', antagoniste,''  + '\x1b[0m')
                                                 combatmagie = 0
                                             
-                                            if event.pos[0] > 6 and event.pos[0] < 138 and event.pos[1] > 341 and event.pos[1] < 374 : # Si on se soigne alors il ce passe plusieurs actions
+                                            if pygame.mouse.get_pos()[0] > 6 and pygame.mouse.get_pos()[0] < 138 and pygame.mouse.get_pos()[1] > 341 and pygame.mouse.get_pos()[1] < 374 : # Si on se soigne alors il ce passe plusieurs actions
                                                 if protagoniste > 65 :
                                                     protagoniste = 100
                                                 if protagoniste <= 65 :
@@ -218,12 +218,12 @@ while continuer : #Boucle principale du jeu
                                                 print('\x1b[6;31;40m' + 'Points de vie de Bo :', protagoniste,'                Points de vie de Ab :', antagoniste,''  + '\x1b[0m')
                                                 combatmagie = 0
                                                     
-                                            if event.pos[0] > 147 and event.pos[0] < 180 and event.pos[1] > 306 and event.pos[1] < 339 :
+                                            if pygame.mouse.get_pos()[0] > 147 and pygame.mouse.get_pos()[0] < 180 and pygame.mouse.get_pos()[1] > 306 and pygame.mouse.get_pos()[1] < 339 :
                                                 combatmagie = 0
                                         
                                     
                             
-                        if event.pos[0] > 6 and event.pos[0] < 138 and event.pos[1] > 376 and event.pos[1] < 409 : #Si on tente une parade il ce passe plusieurs actions
+                        if pygame.mouse.get_pos()[0] > 6 and pygame.mouse.get_pos()[0] < 138 and pygame.mouse.get_pos()[1] > 376 and pygame.mouse.get_pos()[1] < 409 : #Si on tente une parade il ce passe plusieurs actions
                             
                             chance = randrange(1, 8) #choisit un chiffre entre 1 et 7
                             if chance <= 3 :
@@ -247,7 +247,7 @@ while continuer : #Boucle principale du jeu
                                 
                             print('\x1b[6;31;40m' + 'Points de vie de Bo :', protagoniste,'                Points de vie de Ab :', antagoniste,''  + '\x1b[0m')
                             
-                        if event.pos[0] > 6 and event.pos[0] < 138 and event.pos[1] > 411 and event.pos[1] < 444 : #Si on tente de s'enfuir
+                        if pygame.mouse.get_pos()[0] > 6 and pygame.mouse.get_pos()[0] < 138 and pygame.mouse.get_pos()[1] > 411 and pygame.mouse.get_pos()[1] < 444 : #Si on tente de s'enfuir
                             print("Bo tente de s'enfuir...")
                             
                             chancedefuite = randrange(1, 5) #chiffre aléatoire entre 1 et 4 pour savoir si la fuite est possible
