@@ -10,7 +10,7 @@ I'm making this game open source, this way it will be easier to access and to mo
 There are currently 4 versions for this project (more information about them below) :
 - Legacy Untouched: only to save the original files of the final project. `in FR`
 - Legacy Working: if you want the very first experience of the game. `in FR`
-- Legacy Enhanced: if you want to play the original game in English and with better images resolution. `in EN`
+- Enhanced: if you want to play the original game in English and with better images resolution. `in EN`
 - Current: if you want to try the game in it's improved version. `in EN`
 
 ### Legacy Untouched
