@@ -43,7 +43,7 @@ pip3 install pygame
 ```
 Now you can clone the game's folder and change to the directory of the version of the game you want to launch
 ```
-git clone https://github.com/AramLF/BoAdventure
+git clone https://github.com/Aliarame/BoAdventure
 cd BoAdventure/enhanced/
 python3 enhanced.py
 ```
